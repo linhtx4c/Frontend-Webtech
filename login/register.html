@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
-	 <style>
+	<!--  <style>
     #snackbar {
       visibility: hidden; /* Hidden by default. Visible on click */
       min-width: 300px; /* Set a default minimum width */
@@ -71,7 +71,7 @@
             from {bottom: 30px; opacity: 1;}
             to {bottom: 0; opacity: 0;}
             } */
-          </style>
+          </style> -->
 </head>
 <body>
 	
@@ -90,7 +90,7 @@
 						<input id = "name" class="input100" type="text" name="username" placeholder="Enter username">
 						<span class="focus-input100"></span>
 					</div>
-					<div id="snackbar"><h2>Create successful</h2></div>
+					<!-- <div id="snackbar"><h2>Create successful</h2></div> -->
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Email</span>
 						<input id="email" class="input100" type="text" name="username" placeholder="Enter email">
@@ -124,8 +124,8 @@
 								<a href="../index.html">Back</a>
 						</div>
 						<button  type="button" onclick="createUser()"  style="margin-left: 30%;" class="login100-form-btn">Register</button>
-						<div style="margin-left: 25%; margin-top: 10px;">
-							<a href="login.html"> Login page </a>
+						<div style= "margin-left: 50px; margin-top: 10px;">
+							<a href="login.html"> Have an account? </a>
 						</div>
 						
 					</div>
@@ -154,6 +154,7 @@
                    var email = document.forms["myForm"]["email"].value;
                    var pass1 = document.forms["myForm"]["pass1"].value;
                    var pass2 = document.forms["myForm"]["pass2"].value;
+                   var check = document.getElementById("ckb1").checked;
                    if (x == "") {
                     alert("Username must be filled out");
                     return false;
@@ -166,9 +167,15 @@
                   } else if (pass2 == "") {
                     alert("Confirm Password must be filled out");
                     return false;
+                  } else if(check == false){
+                  	alert("Please check box to agree to our Term of Uses and Privacy Policy");
                   }
                   else{
-                    myFunction();
+                    alert("Register successfully! Welcome you !!!");
+                    if(true){
+                    	 window.location.href="login.html";
+                    }
+                   
                   }
                 }
 
