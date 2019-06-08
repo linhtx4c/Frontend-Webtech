@@ -76,12 +76,20 @@
 									<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 									<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 								</ul>
-								<ul class="nav navbar-nav navbar-right navbar-social">
-									<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-									<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-									<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-									<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
-								</ul>
+								<ul class="nav navbar-nav navbar-right">
+										<li class="">
+											<a href="javascript:;" class="user-profile dropdown-toggle"
+												data-toggle="dropdown" aria-expanded="false">
+												<img src="../images/img.jpg" alt="">User
+												<span class=" fa fa-angle-down"></span>
+											</a>
+											<ul class="dropdown-menu dropdown-usermenu pull-right">
+												<li><a href="userprofile.html">Profile</a></li>
+												<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log
+														Out</a></li>
+											</ul>
+										</li>
+									</ul>
 
 								<!-- search & aside toggle -->
 								<!-- <div class="nav-btns">
@@ -175,15 +183,15 @@
 
 		<!-- Page Header -->
 		<div id="post-header" class="page-header">
-			<div class="background-img" style="background-image: url('./img/new/html3.jpg');"></div>
+			<div class="background-img" style="background-image: url('./img/css1detail.jpg');"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-meta">
-							<a class="post-category cat-2" href="html.html">HTML</a>
+							<a class="post-category cat-3" href="css.html">CSS</a>
 							<span class="post-date">March 27, 2018</span>
 						</div>
-						<h1>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h1>
+						<h1>Using “box shadows” and clip-path together</h1>
 					</div>
 				</div>
 			</div>
@@ -202,29 +210,36 @@
 				<div class="col-md-8">
 					<div class="section-row sticky-container">
 						<div class="main-post">
-							<h3>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h3>
-							<p>We have made it easier for users to create descriptions for Amazon seller listings.</p>
-							<p>Amazon restricts the code you can use for listings so we have created a simplified
-								version of the Visual Editor that will create code that is Amazon compatible.</p>
-							<p>To get started all you need to do is click the ‘Amazon Editor mode’ link above the Visual
-								Editor:</p>
+							<h3>You make a box</h3>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html2.png" alt="">
+								<img class="img-responsive" src="./img/css2.png" alt="">
 							</figure>
-							<p>You will notice that the toolbar icons switch to simplified controls:</p>
+							<h3>You fashion it into a nice tag shape</h3>
+							<p>You use clip-path because it's great for that.</p>
+
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html3.png" alt="">
+								<img class="img-responsive" src="./img/css3.png" alt="">
 							</figure>
-							<p>Amazon has a limit of 2000 characters for the description field, our system will warn you
-								if your text is over 2000 characters. We also have a character count tool in the bottom
-								right of the Visual Editor that will help you keep track.</p>
+							<h3>You want a shadow on it, so you...</h3>
+							<p>Try to use box-shadow.</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html4.png" alt="">
+								<img class="img-responsive" src="./img/css4.png" alt="">
 							</figure>
-							<p>Once you have edited the text, copy the HTML from the HTML Editor box and paste it into
-								the Amazon listing display field.</p>
-							<p>Do let us know what you think of this feature. We also have plans to add a custom editor
-								for creating Ebay listings.</p>
+							<p>But it doesn't work. Nothing shows up. You think you're going crazy. You assume you have
+								the syntax wrong. You don't. The problem is that clip-path is cutting it off.</p>
+							<h3>You can drop-shadow a parent element instead</h3>
+							<p>There is a filter that does shadows as well: drop-shadow(). But you can't use it directly
+								on the element because the clip-path will cut it off as well. So you make a parent:</p>
+							<figure class="figure-img">
+								<img class="img-responsive" src="./img/css5.png" alt="">
+							</figure>
+							<p>You can't use box-shadow on that parent either, because the parent is still a rectangle
+								and the shadow will look wrong. But you can use filter, and the shadow will follow the
+								shape.</p>
+							<figure class="figure-img">
+								<img class="img-responsive" src="./img/css6.png" alt="">
+							</figure>
+							<p>That's all.</p>
 						</div>
 						<div class="post-shares sticky-shares">
 							<a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
@@ -255,24 +270,14 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.C</h4>
+										<h4>MR.B</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>While many guides on the internet attempt to teach HTML using a lot of
-										mind-boggling theory, this tutorial will instead focus on giving you the
-										practical skills to build your first site.
-
-										The aim is to show you ‘how’ to create your first web page without spending the
-										entire tutorial focusing too much on the “why.”
-
-										By the end of this tutorial, you will have the know-how to create a basic
-										website and we hope that this will inspire you to delve further into the world
-										of HTML using our follow-on guides
-
-
-
-										Read more: https://html.com/#ixzz5qFFjyuec.</p>
+									<p>You will learn many aspects of styling web pages! You’ll be able to set up the
+										correct file structure, edit text and colors, and create attractive layouts.
+										With these skills, you’ll be able to customize the appearance of your web pages
+										to suit your every need!.</p>
 
 									<!-- comment -->
 									<div class="media">
@@ -281,23 +286,11 @@
 										</div>
 										<div class="media-body">
 											<div class="media-heading">
-												<h4>MR.D</h4>
+												<h4>John Doe</h4>
 												<span class="time">March 27, 2018 at 8:00 am</span>
 												<a href="#" class="reply">Reply</a>
 											</div>
-											<p>Okay, so this is the only bit of mandatory theory. In order to begin to
-												write HTML, it helps if you know what you are writing.
-
-												HTML is the language in which most websites are written. HTML is used to
-												create pages and make them functional.
-
-												The code used to make them visually appealing is known as CSS and we
-												shall focus on this in a later tutorial. For now, we will focus on
-												teaching you how to build rather than design
-
-
-
-												Read more: https://html.com/#ixzz5qFFxvETo.</p>
+											<p>We recommend that you complete Learn HTML before learning CSS.</p>
 										</div>
 									</div>
 									<!-- /comment -->
@@ -312,24 +305,29 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.E</h4>
+										<h4>John Doe</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting
-										in 1989. It stands for Hyper Text Markup Language.
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									</p>
+								</div>
+							</div>
 
-										Hypertext means that the document contains links that allow the reader to jump
-										to other places in the document or to another document altogether. The latest
-										version is known as HTML5.
-
-										A Markup Language is a way that computers speak to each other to control how
-										text is processed and presented. To do this HTML uses two things: tags and
-										attributes.
-
-
-
-										Read more: https://html.com/#ixzz5qFG17JNj.</p>
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Mr.O</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="#" class="reply">Reply</a>
+									</div>
+									<p>OK It is a good idea to create new form from morf orfm rfom rofm .....
+									</p>
 								</div>
 							</div>
 							<!-- /comment -->
@@ -340,9 +338,37 @@
 					<!-- reply -->
 					<div class="section-row">
 						<div class="section-title">
-							<h2><a href="login/login.html">Log in to comment</a></h2>
-							
+							<h2>Leave a reply</h2>
+							<p>your email address will not be published. required fields are marked *</p>
 						</div>
+						<form class="post-reply">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Name *</span>
+										<input class="input" type="text" name="name" value="Mr.O">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Email *</span>
+										<input class="input" type="email" name="email" Value= "aaa@gmail.com">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Website</span>
+										<input class="input" type="text" name="website" value="">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="input" name="message" placeholder="Message" >OK It is a good idea to create new form from morf orfm rfom rofm .....</textarea>
+									</div>
+									<button type='button' class="primary-button" onclick="location.href='commentcss.html'">Submit</button>
+								</div>
+							</div>
+						</form>
 					</div>
 					<!-- /reply -->
 				</div>
@@ -350,6 +376,7 @@
 
 				<!-- aside -->
 				<div class="col-md-4">
+
 					<!-- post widget -->
 					<div class="aside-widget">
 						<div class="section-title">
@@ -473,6 +500,7 @@
 					</div>
 					<!-- /tags -->
 
+					<!-- archive -->
 
 					<!-- /archive -->
 				</div>

@@ -76,11 +76,17 @@
 									<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 									<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 								</ul>
-								<ul class="nav navbar-nav navbar-right navbar-social">
-									<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-									<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-									<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-									<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
+								<ul class="nav navbar-nav navbar-right">
+										<li class="">
+										  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<img src="../images/img.jpg" alt="">User
+											<span class=" fa fa-angle-down"></span>
+										  </a>
+										  <ul class="dropdown-menu dropdown-usermenu pull-right">
+											<li><a href="userprofile.html">Profile</a></li>
+									<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+										  </ul>
+										</li>
 								</ul>
 
 								<!-- search & aside toggle -->
@@ -128,9 +134,9 @@
 				<div class="section-row">
 					<h3>Recent Posts</h3>
 					<div class="post post-widget">
-						<a class="post-img" href="cssdetail.html"><img src="./img/css1.jpg" alt=""></a>
+						<a class="post-img" href="postdetail.html"><img src="./img/widget-2.jpg" alt=""></a>
 						<div class="post-body">
-							<h3 class="post-title"><a href="cssdetail.html">Pagedraw UI Builder Turns Your Website
+							<h3 class="post-title"><a href="postdetail.html">Pagedraw UI Builder Turns Your Website
 									Design Mockup Into Code Automatically</a></h3>
 						</div>
 					</div>
@@ -175,15 +181,15 @@
 
 		<!-- Page Header -->
 		<div id="post-header" class="page-header">
-			<div class="background-img" style="background-image: url('./img/new/html3.jpg');"></div>
+			<div class="background-img" style="background-image: url('./img/new/js6.png');"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-meta">
-							<a class="post-category cat-2" href="html.html">HTML</a>
+							<a class="post-category cat-1" href="javascript.html">JavaScript</a>
 							<span class="post-date">March 27, 2018</span>
 						</div>
-						<h1>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h1>
+						<h1>Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</h1>
 					</div>
 				</div>
 			</div>
@@ -202,29 +208,59 @@
 				<div class="col-md-8">
 					<div class="section-row sticky-container">
 						<div class="main-post">
-							<h3>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h3>
-							<p>We have made it easier for users to create descriptions for Amazon seller listings.</p>
-							<p>Amazon restricts the code you can use for listings so we have created a simplified
-								version of the Visual Editor that will create code that is Amazon compatible.</p>
-							<p>To get started all you need to do is click the ‘Amazon Editor mode’ link above the Visual
-								Editor:</p>
+							<h3>Extension blocks 11 JavaScript-based side-channel attacks</h3>
+							<p>Experts say that currently there are eleven state-of-the-art side-channel attacks that
+								can be performed via JavaScript code running in a browser.</p>
+							<p>Each attack needs access to various local details, for which it uses JavaScript code to
+								leak, recover, and gather the needed information before mounting the actual side-channel
+								attack.</p>
+							<p>After looking at each of the eleven attacks, researchers say they've identified five main
+								categories of data/features that JavaScript side-channel attacks attempt to exploit:
+								JS-recoverable
+								memory addresses, accurate timing (time difference) information, the browser's
+								multithreading (web workers) support, data shared among JS code threads, and data from
+								device sensors.</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html2.png" alt="">
+								<img class="img-responsive" src="./img/javascript1.png" alt="">
 							</figure>
-							<p>You will notice that the toolbar icons switch to simplified controls:</p>
+							<p>The Chrome Zero extension works by intercepting the JavaScript code the Chrome browser is
+								supposed to execute and rewriting certain JavaScript functions, properties, and objects
+								in a wrapper that neutralizes its negative effects, which a side-channel attack would
+								try to leverage.</p>
+							<p>There's lot of hate out there for a text that amounts to little more than garbled words
+								in an old language. The villagers are out there with a vengeance to get that
+								Frankenstein, wielding torches and pitchforks, wanting to tar and feather it at the
+								least, running it out of town in shame.</p>
+							<h3>Chrome Zero has a minimum performance impact</h3>
+							<p>Experts said that despite the extension's intrusive behavior, tests showed a minimum
+								performance impact of only 1.54% on resource usage, and an indiscernible page loading
+								latency ranging from 0.01064s and 0.08908s —depending on the number of protection
+								policies active at runtime.</p>
+							<p>Furthermore, as a side-effect of the extension's "protective measures," the research team
+								says Chrome Zero would have been able to block 50% of the Chrome zero-days detected in
+								the real world since the release of Chrome 49.</p>
+							<p>The extension may be very well able to thwart even future and unknown Chrome zero-days as
+								well, mainly because of its habit of rewriting dangerous functions to safer versions.
+							</p>
+							<h3>How to install Chrome Zero</h3>
+							<p>Since the extension is not yet on the Chrome Web Store, users can install it by (1)
+								downloading the extension's source code from GitHub, (2) going to Chrome's extensions
+								management page (chrome://extensions), (3) enabling "Developer Mode," (4) clicking "Load
+								Unpacked," and (5) selecting the folder "/chromezero" from inside the extension's source
+								code.</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html3.png" alt="">
+								<img class="img-responsive" src="./img/jc2.png" alt="">
 							</figure>
-							<p>Amazon has a limit of 2000 characters for the description field, our system will warn you
-								if your text is over 2000 characters. We also have a character count tool in the bottom
-								right of the Visual Editor that will help you keep track.</p>
+							<p>Once the extension has been loaded and enabled, users can select their desired protection
+								level.</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html4.png" alt="">
+								<img class="img-responsive" src="./img/jc3.png" alt="">
 							</figure>
-							<p>Once you have edited the text, copy the HTML from the HTML Editor box and paste it into
-								the Amazon listing display field.</p>
-							<p>Do let us know what you think of this feature. We also have plans to add a custom editor
-								for creating Ebay listings.</p>
+							<p>The academics who created Chrome Zero are also the ones behind the JavaScript-version of
+								the Rowhammer attack and have also contributed to the discovery of the Meltdown and
+								Spectre vulnerabilities.</p>
+
+
 						</div>
 						<div class="post-shares sticky-shares">
 							<a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
@@ -255,24 +291,14 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.C</h4>
+										<h4>MR.F</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>While many guides on the internet attempt to teach HTML using a lot of
-										mind-boggling theory, this tutorial will instead focus on giving you the
-										practical skills to build your first site.
-
-										The aim is to show you ‘how’ to create your first web page without spending the
-										entire tutorial focusing too much on the “why.”
-
-										By the end of this tutorial, you will have the know-how to create a basic
-										website and we hope that this will inspire you to delve further into the world
-										of HTML using our follow-on guides
-
-
-
-										Read more: https://html.com/#ixzz5qFFjyuec.</p>
+									<p>Lou will learn programming fundamentals and basic object-oriented concepts using
+										the latest JavaScript syntax. The concepts covered in these lessons lay the
+										foundation for using JavaScript in any environment..
+									</p>
 
 									<!-- comment -->
 									<div class="media">
@@ -281,23 +307,17 @@
 										</div>
 										<div class="media-body">
 											<div class="media-heading">
-												<h4>MR.D</h4>
+												<h4>MR.G</h4>
 												<span class="time">March 27, 2018 at 8:00 am</span>
 												<a href="#" class="reply">Reply</a>
 											</div>
-											<p>Okay, so this is the only bit of mandatory theory. In order to begin to
-												write HTML, it helps if you know what you are writing.
-
-												HTML is the language in which most websites are written. HTML is used to
-												create pages and make them functional.
-
-												The code used to make them visually appealing is known as CSS and we
-												shall focus on this in a later tutorial. For now, we will focus on
-												teaching you how to build rather than design
-
-
-
-												Read more: https://html.com/#ixzz5qFFxvETo.</p>
+											<p>JavaScript (JS) is a lightweight interpreted or just-in-time compiled
+												programming language with first-class functions. While it is most
+												well-known as the scripting language for Web pages, many non-browser
+												environments also use it, such as Node.js, Apache CouchDB and Adobe
+												Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic
+												language, supporting object-oriented, imperative, and declarative (e.g.
+												functional programming) styles. Read more about JavaScript.</p>
 										</div>
 									</div>
 									<!-- /comment -->
@@ -312,27 +332,32 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.E</h4>
+										<h4>MR.H</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting
-										in 1989. It stands for Hyper Text Markup Language.
-
-										Hypertext means that the document contains links that allow the reader to jump
-										to other places in the document or to another document altogether. The latest
-										version is known as HTML5.
-
-										A Markup Language is a way that computers speak to each other to control how
-										text is processed and presented. To do this HTML uses two things: tags and
-										attributes.
-
-
-
-										Read more: https://html.com/#ixzz5qFG17JNj.</p>
+									<p>o not confuse JavaScript with the Java programming language. Both "Java" and
+										"JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and
+										other countries. However, the two programming languages have very different
+										syntax, semantics, and uses.
+									</p>
 								</div>
 							</div>
 							<!-- /comment -->
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.H</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="#" class="reply">Reply</a>
+									</div>
+									<p>OK It is a good idea to create new form from morf orfm rfom rofm .....
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- /comments -->
@@ -340,9 +365,37 @@
 					<!-- reply -->
 					<div class="section-row">
 						<div class="section-title">
-							<h2><a href="login/login.html">Log in to comment</a></h2>
-							
+							<h2>Leave a reply</h2>
+							<p>your email address will not be published. required fields are marked *</p>
 						</div>
+						<form class="post-reply">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Name *</span>
+										<input class="input" type="text" name="name" value="Mr.O">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Email *</span>
+										<input class="input" type="email" name="email" Value= "aaa@gmail.com">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Website</span>
+										<input class="input" type="text" name="website" value="">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="input" name="message" placeholder="Message" >OK It is a good idea to create new form from morf orfm rfom rofm .....</textarea>
+									</div>
+									<button type='button' class="primary-button" onclick="location.href='commentjc.html'">Submit</button>
+								</div>
+							</div>
+						</form>
 					</div>
 					<!-- /reply -->
 				</div>
@@ -350,6 +403,7 @@
 
 				<!-- aside -->
 				<div class="col-md-4">
+
 					<!-- post widget -->
 					<div class="aside-widget">
 						<div class="section-title">
@@ -473,6 +527,7 @@
 					</div>
 					<!-- /tags -->
 
+					<!-- archive -->
 
 					<!-- /archive -->
 				</div>

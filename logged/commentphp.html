@@ -66,21 +66,27 @@
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
 											role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 										<ul class="dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="index2.html">Blog List</a>
-											</li>
+											<li class="nav-item"><a class="nav-link" href="index2.html">Blog Detail</a>
 											<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a>
 											</li>
-										</ul>
 									</li>
-
-									<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-									<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 								</ul>
-								<ul class="nav navbar-nav navbar-right navbar-social">
-									<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-									<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-									<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-									<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
+								</li>
+
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+										<li class="">
+										  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<img src="../images/img.jpg" alt="">User
+											<span class=" fa fa-angle-down"></span>
+										  </a>
+										  <ul class="dropdown-menu dropdown-usermenu pull-right">
+											<li><a href="userprofile.html">Profile</a></li>
+											<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+										  </ul>
+										</li>
 								</ul>
 
 								<!-- search & aside toggle -->
@@ -175,15 +181,15 @@
 
 		<!-- Page Header -->
 		<div id="post-header" class="page-header">
-			<div class="background-img" style="background-image: url('./img/new/html3.jpg');"></div>
+			<div class="background-img" style="background-image: url('./img/php1.jpg');"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-meta">
-							<a class="post-category cat-2" href="html.html">HTML</a>
+							<a class="post-category cat-4" href="php.html">PHP</a>
 							<span class="post-date">March 27, 2018</span>
 						</div>
-						<h1>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h1>
+						<h1>PHP is much better than you think</h1>
 					</div>
 				</div>
 			</div>
@@ -202,29 +208,70 @@
 				<div class="col-md-8">
 					<div class="section-row sticky-container">
 						<div class="main-post">
-							<h3>New Word to HTML Feature: Easily Create Amazon Listing Descriptions…</h3>
-							<p>We have made it easier for users to create descriptions for Amazon seller listings.</p>
-							<p>Amazon restricts the code you can use for listings so we have created a simplified
-								version of the Visual Editor that will create code that is Amazon compatible.</p>
-							<p>To get started all you need to do is click the ‘Amazon Editor mode’ link above the Visual
-								Editor:</p>
+							<h3>PHP, the Language</h3>
+							<p>PHP 5.0 (released in 2004) brought us a very solid object model... wait a minute, I'm
+								talking about something released almost 8 years ago. Fast forward now. The latest PHP
+								release, PHP 5.4, comes with all the bells and whistles you might dream of in a modern
+								web language: yes, PHP supports namespaces; yes, PHP supports closures; yes, PHP
+								supports traits.</p>
+							<p>It took some time, but PHP 5.4 also comes with some nice syntactic sugar that makes the
+								whole experience better than ever: yes, PHP supports [] to define arrays; yes, PHP
+								supports calling a method on a newly created object ((new Foo())->bar()); yes, PHP
+								supports getting an array item from any expression ($foo->bar()[1]).</p>
+							<p>PHP has even learned from its mistakes: register_globals and magic_quotes are definitely
+								gone.</p>
+							<p>Last, but not the least, PHP even comes with a built-in web server that eases local
+								testing... and it starts in a matter of micro-seconds.</p>
+							<p>Next challenges: How do we "upgrade" all the old tutorials talking about PHP on the web?
+								What is the best way to support the WebSocket technology in a PHP application?</p>
+							<h3>PHP, the Ecosystem</h3>
+							<p>Having a good language is great, but having a great ecosystem is even better. And the PHP
+								ecosystem has evolved a lot in the last few years.</p>
+							<p>Git</p>
+							<p>I won't talk too much about this one. Git is everywhere and PHP embraced Git pretty fast.
+								Almost all major PHP libraries, frameworks, and products are now using Git, including
+								PHP itself.</p>
+							<p>Composer</p>
+							<p>Two years ago, I wanted to get rid of my ugly-PEAR-hack I did in symfony 1 to support
+								plugins. I wanted to replace it with something that was able to manage project
+								dependencies, not a global installer like PEAR. Managing dependencies is not an easy
+								task, so I tried to find the best algorithm to manage software dependencies; I had a
+								look at everything: from Perl to Ruby, from Debian to Redhat. Nothing was satisfactory:
+								only homegrown solutions that happen to work... empirically. Then, I stumbled upon ZYpp.
+								That was it. ZYpp uses a SAT solver to manage dependencies. Fast forward. Thanks to the
+								hard work of Nils Adermann and Jordi Boggiano, PHP now has one of the best dependency
+								manager, Composer.</p>
+							<p>Yes, PHP has a better dependency manager than any other languages.
+
+								And thanks to Git, Composer, and the PHP built-in web server, it has never been easier
+								to download/install/test a PHP project.
+
+								Want to test Symfony (using PHP 5.4)?</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html2.png" alt="">
+								<img class="img-responsive" src="./img/php2.png" alt="">
 							</figure>
-							<p>You will notice that the toolbar icons switch to simplified controls:</p>
+							<p>Want to test Silex?</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html3.png" alt="">
+								<img class="img-responsive" src="./img/php3.png" alt="">
 							</figure>
-							<p>Amazon has a limit of 2000 characters for the description field, our system will warn you
-								if your text is over 2000 characters. We also have a character count tool in the bottom
-								right of the Visual Editor that will help you keep track.</p>
-							<figure class="figure-img">
-								<img class="img-responsive" src="./img/html4.png" alt="">
-							</figure>
-							<p>Once you have edited the text, copy the HTML from the HTML Editor box and paste it into
-								the Amazon listing display field.</p>
-							<p>Do let us know what you think of this feature. We also have plans to add a custom editor
-								for creating Ebay listings.</p>
+							<p>Don't know Composer yet? You should learn about it. Browse Packagist, the main Composer
+								repository: it already has 1900+ packages available and they have been installed more
+								than a million times in less than 3 months.
+								</br>
+								Next challenge: include the Composer installer in the next PHP version?</p>
+							<p>Collaboration</p>
+							<p>Community collaboration is the most important point of this post; the one I'm the most
+								proud of. We start to see better collaboration between PHP projects, even from the very
+								big ones, the ones you would think are large enough to not care about the others.
+								</br>
+								phpBB, Drupal, eZ Publish, Symfony, and many others (phpDocumentor, PHPUnit, Behat,
+								Zikula, Propel, Doctrine, Midgard, ...) are sharing code. Yes, they are "competitors"
+								but they all understood that cross-pollination was a good thing. And Composer is a good
+								enabler.</p>
+							<p>Next challenge: Convince even more projects to join the trend.</p>
+							<h3>Conclusion</h3>
+							<p>Let me say it again: PHP is probably not the best language out there, and I'm the first
+								one to scream about its quirks, but PHP is the best web platform... ever.</p>
 						</div>
 						<div class="post-shares sticky-shares">
 							<a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
@@ -255,24 +302,14 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.C</h4>
+										<h4>MR.G</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>While many guides on the internet attempt to teach HTML using a lot of
-										mind-boggling theory, this tutorial will instead focus on giving you the
-										practical skills to build your first site.
-
-										The aim is to show you ‘how’ to create your first web page without spending the
-										entire tutorial focusing too much on the “why.”
-
-										By the end of this tutorial, you will have the know-how to create a basic
-										website and we hope that this will inspire you to delve further into the world
-										of HTML using our follow-on guides
-
-
-
-										Read more: https://html.com/#ixzz5qFFjyuec.</p>
+									<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open
+										source general-purpose scripting language that is especially suited for web
+										development and can be embedded into HTML..
+									</p>
 
 									<!-- comment -->
 									<div class="media">
@@ -281,23 +318,15 @@
 										</div>
 										<div class="media-body">
 											<div class="media-heading">
-												<h4>MR.D</h4>
+												<h4>MR.K</h4>
 												<span class="time">March 27, 2018 at 8:00 am</span>
 												<a href="#" class="reply">Reply</a>
 											</div>
-											<p>Okay, so this is the only bit of mandatory theory. In order to begin to
-												write HTML, it helps if you know what you are writing.
-
-												HTML is the language in which most websites are written. HTML is used to
-												create pages and make them functional.
-
-												The code used to make them visually appealing is known as CSS and we
-												shall focus on this in a later tutorial. For now, we will focus on
-												teaching you how to build rather than design
-
-
-
-												Read more: https://html.com/#ixzz5qFFxvETo.</p>
+											<p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP
+												pages contain HTML with embedded code that does "something" (in this
+												case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in
+												special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
 										</div>
 									</div>
 									<!-- /comment -->
@@ -312,37 +341,70 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.E</h4>
+										<h4>MR.L</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
 										<a href="#" class="reply">Reply</a>
 									</div>
-									<p>HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting
-										in 1989. It stands for Hyper Text Markup Language.
-
-										Hypertext means that the document contains links that allow the reader to jump
-										to other places in the document or to another document altogether. The latest
-										version is known as HTML5.
-
-										A Markup Language is a way that computers speak to each other to control how
-										text is processed and presented. To do this HTML uses two things: tags and
-										attributes.
-
-
-
-										Read more: https://html.com/#ixzz5qFG17JNj.</p>
+									<p>The best things in using PHP are that it is extremely simple for a newcomer, but
+										offers many advanced features for a professional programmer. Don't be afraid
+										reading the long list of PHP's features. You can jump in, in a short time, and
+										start writing simple scripts in a few hours.
+									</p>
 								</div>
 							</div>
 							<!-- /comment -->
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.O</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="#" class="reply">Reply</a>
+									</div>
+									<p>OK It is a good idea to create new form from morf orfm rfom rofm .....
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- /comments -->
 
 					<!-- reply -->
-					<div class="section-row">
+						<div class="section-row">
 						<div class="section-title">
-							<h2><a href="login/login.html">Log in to comment</a></h2>
-							
+							<h2>Leave a reply</h2>
+							<p>your email address will not be published. required fields are marked *</p>
 						</div>
+						<form class="post-reply">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Name *</span>
+										<input class="input" type="text" name="name" value="Mr.O">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Email *</span>
+										<input class="input" type="email" name="email" Value= "aaa@gmail.com">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span>Website</span>
+										<input class="input" type="text" name="website" value="">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="input" name="message" placeholder="Message" >OK It is a good idea to create new form from morf orfm rfom rofm .....</textarea>
+									</div>
+									<button type='button' class="primary-button" onclick="location.href='commentphp.html'">Submit</button>
+								</div>
+							</div>
+						</form>
 					</div>
 					<!-- /reply -->
 				</div>
@@ -350,6 +412,8 @@
 
 				<!-- aside -->
 				<div class="col-md-4">
+
+
 					<!-- post widget -->
 					<div class="aside-widget">
 						<div class="section-title">
@@ -473,6 +537,7 @@
 					</div>
 					<!-- /tags -->
 
+					<!-- archive -->
 
 					<!-- /archive -->
 				</div>
