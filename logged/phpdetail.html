@@ -294,7 +294,7 @@
 							<h2>3 Comments</h2>
 						</div>
 
-						<div class="post-comments">
+						<div class="post-comments" >
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
@@ -334,6 +334,47 @@
 							</div>
 							<!-- /comment -->
 
+
+
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.G</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="#" class="reply">Reply</a>
+									</div>
+									<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open
+										source general-purpose scripting language that is especially suited for web
+										development and can be embedded into HTML..
+									</p>
+
+									<!-- comment -->
+									<div class="media">
+										<div class="media-left">
+											<img class="media-object" src="./img/avatar.png" alt="">
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<h4>MR.K</h4>
+												<span class="time">March 27, 2018 at 8:00 am</span>
+												<a href="#" class="reply">Reply</a>
+											</div>
+											<p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP
+												pages contain HTML with embedded code that does "something" (in this
+												case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in
+												special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
+										</div>
+									</div>
+									<!-- /comment -->
+								</div>
+							</div>
+
+
+							
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
@@ -356,16 +397,54 @@
 						</div>
 					</div>
 					<!-- /comments -->
-
+					<div class="media" >
+							<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.O</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="#" class="reply">Reply</a>
+									</div>
+									<p id ="demo"></p>
+								</div>
+								
+					</div>
 					<!-- reply -->
-					<div class="section-row">
+						<div class="section-row">
 						<div class="section-title">
 							<h2>Leave a reply</h2>
+							
+						</div>
+						<form class="post-reply">
+							<div class="row">
+								
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="input" name="message" placeholder="Message" >OK It is a good idea to create new form from morf orfm rfom rofm .....</textarea>
+										<textarea class="input" name="message" placeholder="Message" >The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.</textarea>
 									</div>
 									<button type='button' class="primary-button" onclick="location.href='commentphp.html'">Submit</button>
+									<script>
+   function comment() {
+       //tạo phần tử p    
+       var p = document.createElement("p");
+
+       //tạo phần tử text
+       var node = document.createTextNode("OK It is a good idea to create new form from morf orfm rfom rofm .....");
+
+       //gắn node vào p
+       p.appendChild(node);
+       
+       //Thay đổi một số thuộc tính của p
+       p.appendChild(node);
+      
+
+       var div = document.getElementById("demo");
+       //gắn p vào div
+       div.appendChild(p);
+   }
+</script>
 								</div>
 							</div>
 						</form>
@@ -556,10 +635,10 @@
 							<div class="footer-widget">
 								<h3 class="footer-title">Catagories</h3>
 								<ul class="footer-links">
-									<li><a href="javascript.html">JavaScript</a></li>
-									<li><a href="html.html">HTML</a></li>
-									<li><a href="css.html">CSS</a></li>
-									<li><a href="php.html">PHP</a></li>
+									<li><a href="category.html">Web Design</a></li>
+									<li><a href="category.html">JavaScript</a></li>
+									<li><a href="category.html">Css</a></li>
+									<li><a href="category.html">Jquery</a></li>
 								</ul>
 							</div>
 						</div>
