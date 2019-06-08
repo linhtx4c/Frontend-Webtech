@@ -102,13 +102,24 @@
 		function loginForm(){
 			var username = document.forms["myForm"]["username"].value;
 			var pass = document.forms["myForm"]["pass"].value;
-
+			var a = "admin";
+			var b = "admin";
+			var c = "user";
+			var d = "user";
 			if(username == ""){
 				alert("Fill out username");
 			} else if (pass == ""){
 				alert("Fill out password");
 			} else {
-				window.location.href = "../logged/index.html";
+				if(username == a && pass == b){
+				location.href = "https://ladylee44.github.io/ladysouth/production/boss/";
+				}
+				else if(username==c && pass==d){
+				location.href = "../logged/index.html"
+				}else{
+					alert("Login unsuccessfully");
+				}
+				
 			}
 			// return false;
 
@@ -120,6 +131,7 @@
 			// 	window.location.href = "../logged/index.html"
 			// }
 		}
+
 	</script>
 
 </body>
