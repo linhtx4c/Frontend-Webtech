@@ -1070,9 +1070,12 @@ RESPONSIVE
     @media only screen and (max-width: 991px) {
        #nav .nav-menu {
            display: none;
+
        }
+
+  
    }
-   @media only screen and (max-width: 767px) {
+   @media only screen and (max-width: 767) {
       .page-header h1 {
          font-size: 28px;
      }
@@ -1089,4 +1092,8 @@ RESPONSIVE
    .post.post-row .post-body p {
        display:none;
    }
+   nav .nav navbar-nav{
+    
+   }
+   
 }
