@@ -67,19 +67,26 @@
 											role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 										<ul class="dropdown-menu">
 											<li class="nav-item"><a class="nav-link" href="index2.html">Blog Detail</a>
-											<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
+											<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a>
 											</li>
-										</ul>
 									</li>
-
-									<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-									<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 								</ul>
-								<ul class="nav navbar-nav navbar-right navbar-social">
-									<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-									<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-									<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-									<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
+								</li>
+
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+										<li class="">
+										  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<img src="../images/img.jpg" alt="">User
+											<span class=" fa fa-angle-down"></span>
+										  </a>
+										  <ul class="dropdown-menu dropdown-usermenu pull-right">
+											<li><a href="userprofile.html">Profile</a></li>
+											<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+										  </ul>
+										</li>
 								</ul>
 
 								<!-- search & aside toggle -->
@@ -95,7 +102,8 @@
 									<div class="search-container">
 										<form>
 											<input type="text" placeholder="Enter your search" name="search">
-											<a class="fa fa-search" href="searchresult.html" role="button" style="text-decoration: none; padding-right: 20px;"></a>
+											<a class="fa fa-search" href="searchresult.html" role="button"
+												style="text-decoration: none; padding-right: 20px;"></a>
 										</form>
 									</div>
 								</div>
@@ -178,7 +186,7 @@
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-meta">
-							<a class="post-category cat-2" href="php.html">PHP</a>
+							<a class="post-category cat-4" href="php.html">PHP</a>
 							<span class="post-date">March 27, 2018</span>
 						</div>
 						<h1>PHP is much better than you think</h1>
@@ -277,30 +285,7 @@
 
 
 					<!-- author -->
-					<div class="section-row">
-						<div class="post-author">
-							<div class="media">
-								<div class="media-left">
-									<img class="media-object" src="./img/author.png" alt="">
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<h3>John Doe</h3>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									</p>
-									<ul class="author-social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+
 					<!-- /author -->
 
 					<!-- comments -->
@@ -309,7 +294,7 @@
 							<h2>3 Comments</h2>
 						</div>
 
-						<div class="post-comments">
+						<div class="post-comments" >
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
@@ -317,13 +302,13 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>John Doe</h4>
+										<h4>MR.G</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
-										<a href="#" class="reply">Reply</a>
+										<a href="commentphp.html" class="reply">Reply</a>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open
+										source general-purpose scripting language that is especially suited for web
+										development and can be embedded into HTML..
 									</p>
 
 									<!-- comment -->
@@ -333,14 +318,15 @@
 										</div>
 										<div class="media-body">
 											<div class="media-heading">
-												<h4>John Doe</h4>
+												<h4>MR.K</h4>
 												<span class="time">March 27, 2018 at 8:00 am</span>
-												<a href="#" class="reply">Reply</a>
+												<a href="commentphp.html" class="reply">Reply</a>
 											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-												veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-												commodo consequat.</p>
+											<p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP
+												pages contain HTML with embedded code that does "something" (in this
+												case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in
+												special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
 										</div>
 									</div>
 									<!-- /comment -->
@@ -348,6 +334,47 @@
 							</div>
 							<!-- /comment -->
 
+
+
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.G</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="commentphp.html" class="reply">Reply</a>
+									</div>
+									<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open
+										source general-purpose scripting language that is especially suited for web
+										development and can be embedded into HTML..
+									</p>
+
+									<!-- comment -->
+									<div class="media">
+										<div class="media-left">
+											<img class="media-object" src="./img/avatar.png" alt="">
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<h4>MR.K</h4>
+												<span class="time">March 27, 2018 at 8:00 am</span>
+												<a href="commentphp.html" class="reply">Reply</a>
+											</div>
+											<p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP
+												pages contain HTML with embedded code that does "something" (in this
+												case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in
+												special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
+										</div>
+									</div>
+									<!-- /comment -->
+								</div>
+							</div>
+
+
+							
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
@@ -355,13 +382,14 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>John Doe</h4>
+										<h4>MR.L</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
-										<a href="#" class="reply">Reply</a>
+										<a href="commentphp.html" class="reply">Reply</a>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									<p>The best things in using PHP are that it is extremely simple for a newcomer, but
+										offers many advanced features for a professional programmer. Don't be afraid
+										reading the long list of PHP's features. You can jump in, in a short time, and
+										start writing simple scripts in a few hours.
 									</p>
 								</div>
 							</div>
@@ -369,38 +397,54 @@
 						</div>
 					</div>
 					<!-- /comments -->
-
+					<div class="media" >
+							<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>MR.O</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="commentphp.html" class="reply">Reply</a>
+									</div>
+									<p id ="demo"></p>
+								</div>
+								
+					</div>
 					<!-- reply -->
-					<div class="section-row">
+						<div class="section-row">
 						<div class="section-title">
 							<h2>Leave a reply</h2>
-							<p>your email address will not be published. required fields are marked *</p>
+							
 						</div>
 						<form class="post-reply">
 							<div class="row">
-								<div class="col-md-4">
-									<div class="form-group">
-										<span>Name *</span>
-										<input class="input" type="text" name="name">
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<span>Email *</span>
-										<input class="input" type="email" name="email">
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<span>Website</span>
-										<input class="input" type="text" name="website">
-									</div>
-								</div>
+								
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="input" name="message" placeholder="Message"></textarea>
+										<textarea class="input" name="message" placeholder="Message" >The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.</textarea>
 									</div>
-									<button class="primary-button">Submit</button>
+									<button type='button' class="primary-button" onclick="location.href='commentphp.html'">Submit</button>
+									<script>
+   function comment() {
+       //tạo phần tử p    
+       var p = document.createElement("p");
+
+       //tạo phần tử text
+       var node = document.createTextNode("OK It is a good idea to create new form from morf orfm rfom rofm .....");
+
+       //gắn node vào p
+       p.appendChild(node);
+       
+       //Thay đổi một số thuộc tính của p
+       p.appendChild(node);
+      
+
+       var div = document.getElementById("demo");
+       //gắn p vào div
+       div.appendChild(p);
+   }
+</script>
 								</div>
 							</div>
 						</form>
@@ -411,13 +455,7 @@
 
 				<!-- aside -->
 				<div class="col-md-4">
-					<!-- ad -->
-					<div class="aside-widget text-center">
-						<a href="#" style="display: inline-block;margin: auto;">
-							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
-						</a>
-					</div>
-					<!-- /ad -->
+
 
 					<!-- post widget -->
 					<div class="aside-widget">
@@ -426,34 +464,42 @@
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="postdetail.html"><img src="./img/widget-1.jpg" alt=""></a>
+							<a class="post-img" href="jcdetail.html"><img src="./img/new/js2.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="postdetail.html">Tell-A-Tool: Guide To Web Design And
-										Development Tools</a></h3>
+								<h3 class="post-title"><a href="jcdetail.html">"JavaScript" is a trademark of Oracle
+										Corporation in the United States.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="postdetail.html"><img src="./img/widget-2.jpg" alt=""></a>
+							<a class="post-img" href="htmldetail.html"><img src="./img/new/html1.png" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="postdetail.html">Pagedraw UI Builder Turns Your Website
-										Design Mockup Into Code Automatically</a></h3>
+								<h3 class="post-title"><a href="htmldetail.html">HTML is a markup language that web
+										browsers use to interpret</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="postdetail.html"><img src="./img/widget-3.jpg" alt=""></a>
+							<a class="post-img" href="cssdetail.html"><img src="./img/new/css1.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="postdetail.html">Why Node.js Is The Coolest Kid On The
-										Backend Development Block!</a></h3>
+								<h3 class="post-title"><a href="cssdetail.html">CSS information can be provided from
+										various sources.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="postdetail.html"><img src="./img/widget-4.jpg" alt=""></a>
+							<a class="post-img" href="phpdetail.html"><img src="./img/new/php9.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="postdetail.html">Tell-A-Tool: Guide To Web Design And
-										Development Tools</a></h3>
+								<h3 class="post-title"><a href="phpdetail.html">The PHP interpreter only executes PHP
+										code within its delimiters.</a></h3>
+							</div>
+						</div>
+
+						<div class="post post-widget">
+							<a class="post-img" href="phpdetail.html"><img src="./img/new/css7.png" alt=""></a>
+							<div class="post-body">
+								<h3 class="post-title"><a href="phpdetail.html">PHP stores integers in a
+										platform-dependent range.</a></h3>
 							</div>
 						</div>
 					</div>
@@ -465,42 +511,57 @@
 							<h2>Featured Posts</h2>
 						</div>
 						<div class="post post-thumb">
-							<a class="post-img" href="postdetail.html"><img src="./img/post-2.jpg" alt=""></a>
+							<a class="post-img" href="cssdetail.html"><img src="./img/new/css4.jpg"
+									style="height: 220px;" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-3" href="#">Jquery</a>
-									<span class="post-date">March 27, 2018</span>
+									<a class="post-category cat-3" href="css.html">CSS</a>
+									<span class="post-date">June 6, 2019</span>
 								</div>
-								<h3 class="post-title"><a href="postdetail.html">Ask HN: Does Anybody Still Use
-										JQuery?</a></h3>
+								<h3 class="post-title"><a href="cssdetail.html">CSS has a simple syntax</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-thumb">
-							<a class="post-img" href="postdetail.html"><img src="./img/post-1.jpg" alt=""></a>
+							<a class="post-img" href="jcdetail.html"><img src="./img/new/javascript-19.png"
+									style="height: 220px;" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-2" href="#">JavaScript</a>
-									<span class="post-date">March 27, 2018</span>
+									<a class="post-category cat-1" href="javascript.html">JavaScript</a>
+									<span class="post-date">June 6, 2019</span>
 								</div>
-								<h3 class="post-title"><a href="postdetail.html">Chrome Extension Protects Against
-										JavaScript-Based CPU Side-Channel Attacks</a></h3>
+								<h3 class="post-title"><a href="jcdetail.html">JavaScript enables interactive web
+										pages</a></h3>
 							</div>
 						</div>
+
+						<div class="post post-thumb">
+							<a class="post-img" href="jcdetail.html"><img src="./img/new/php006.png"
+									style="height: 220px;" alt=""></a>
+							<div class="post-body">
+								<div class="post-meta">
+									<a class="post-category cat-1" href="javascript.html">JavaScript</a>
+									<span class="post-date">June 6, 2019</span>
+								</div>
+								<h3 class="post-title"><a href="jcdetail.html">10 Top PHP Blogs to Improve Your Coding
+										Skills</a></h3>
+							</div>
+						</div>
+
 					</div>
 					<!-- /post widget -->
 
 					<!-- catagories -->
-						<div class="aside-widget">
+					<div class="aside-widget">
 						<div class="section-title">
 							<h2>Categories</h2>
 						</div>
 						<div class="category-widget">
 							<ul>
-								<li><a href="#" class="cat-1">Javascript<span>340</span></a></li>
-								<li><a href="#" class="cat-2">HTML<span>74</span></a></li>
-								<li><a href="#" class="cat-4">PHP<span>41</span></a></li>
-								<li><a href="#" class="cat-3">CSS<span>35</span></a></li>
+								<li><a href="javascript.html" class="cat-1">Javascript<span>340</span></a></li>
+								<li><a href="html.html" class="cat-2">HTML<span>74</span></a></li>
+								<li><a href="css.html" class="cat-4">PHP<span>41</span></a></li>
+								<li><a href="php.html" class="cat-3">CSS<span>35</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -510,22 +571,17 @@
 					<div class="aside-widget">
 						<div class="tags-widget">
 							<ul>
-								<li><a href="#">Chrome</a></li>
-								<li><a href="#">CSS</a></li>
-								<li><a href="#">Tutorial</a></li>
-								<li><a href="#">Backend</a></li>
-								<li><a href="#">JQuery</a></li>
-								<li><a href="#">Design</a></li>
-								<li><a href="#">Development</a></li>
-								<li><a href="#">JavaScript</a></li>
-								<li><a href="#">Website</a></li>
+								<li><a href="javascript.html">JavaScript</a></li>
+								<li><a href="html.html">HTML</a></li>
+								<li><a href="css.html">CSS</a></li>
+								<li><a href="php.html">PHP</a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- /tags -->
 
 					<!-- archive -->
-					
+
 					<!-- /archive -->
 				</div>
 				<!-- /aside -->

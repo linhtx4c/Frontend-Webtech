@@ -29,6 +29,11 @@
 		<![endif]-->
 
 </head>
+<style>
+	ul {
+		list-style-type: none;
+	}
+</style>
 
 <body>
 
@@ -47,8 +52,8 @@
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 							<!-- <li class="nav-item"><a class="nav-link" href="#">Category</a></li> -->
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">Category</a>
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false">Category</a>
 								<ul class="dropdown-menu">
 									<li class="cat-1"><a class="nav-link" href="javascript.html">Javascript</a></li>
 									<li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
@@ -58,22 +63,28 @@
 							</li>
 
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">Blog</a>
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="index2.html">Blog List</a></li>
-												<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
+									<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
 								</ul>
 							</li>
 
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right navbar-social">
-							<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-							<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-							<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-							<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
+						<ul class="nav navbar-nav navbar-right">
+								<li class="">
+								  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<img src="../images/img.jpg" alt="">User
+									<span class=" fa fa-angle-down"></span>
+								  </a>
+								  <ul class="dropdown-menu dropdown-usermenu pull-right">
+									<li><a href="userprofile.html">Profile</a></li>
+									<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+								  </ul>
+								</li>
 						</ul>
 
 						<!-- search & aside toggle -->
@@ -89,7 +100,8 @@
 							<div class="search-container">
 								<form>
 									<input type="text" placeholder="Enter your search" name="search">
-									<a class="fa fa-search" href="searchresult.html" role="button" style="text-decoration: none; padding-right: 20px;"></a>
+									<a class="fa fa-search" href="searchresult.html" role="button"
+										style="text-decoration: none; padding-right: 20px;"></a>
 								</form>
 							</div>
 						</div>
@@ -132,7 +144,8 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">PHP is much better than you think</a></h3>
+									<h3 class="post-title"><a href="phpdetail.html">PHP is much better than you
+											think</a></h3>
 								</div>
 							</div>
 						</div>
@@ -141,15 +154,14 @@
 						<!-- post -->
 						<div class="col-md-6">
 							<div class="post">
-								<a class="post-img" href="phpdetail.html"><img src="./img/php4.png" alt="" height="200px"
-										width=" 150px"></a>
+								<a class="post-img" href="phpdetail.html"><img src="./img/php4.png" alt=""
+										height="200px" width=" 150px"></a>
 								<div class="post-body">
 									<div class="post-meta">
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Chrome Extension Protects Against JavaScript-Based CPU
-											Side-Channel Attacks</a></h3>
+									<h3 class="post-title"><a href="phpdetail.html">PHP stores integers in a platform-dependent range</a></h3>
 								</div>
 							</div>
 						</div>
@@ -164,8 +176,7 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Why Node.js Is The Coolest Kid On The Backend
-											Development Block!</a></h3>
+									<h3 class="post-title"><a href="phpdetail.html">The PHP interpreter only executes PHP code within its delimiters</a></h3>
 								</div>
 							</div>
 						</div>
@@ -184,9 +195,8 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-										labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+									<h3 class="post-title"><a href="phpdetail.html">PHP defines a large array of functions in the core language and many are also available in various extensions</a></h3>
+									<p>Arrays can contain elements of any type that PHP can handle, including resources, objects, and even other arrays. Order is preserved in lists of values and in hashes with both...</p>
 								</div>
 							</div>
 						</div>
@@ -201,10 +211,8 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Microsoft’s TypeScript Fills A Long-standing Void In
-											JavaScript</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-										labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+									<h3 class="post-title"><a href="phpdetail.html">Functions in PHP can be referenced by a string containing their name</a></h3>
+									<p>Variables of the "resource" type represent references to resources from external sources. These are typically created by functions from a particular extension, and can only be ...</p>
 								</div>
 							</div>
 						</div>
@@ -219,9 +227,9 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Javascript : Prototype vs Class</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-										labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+									<h3 class="post-title"><a href="phpdetail.html">Basic object-oriented programming functionality was added in PHP 3</a>
+									</h3>
+									<p>The drawback of this method was that code had to make heavy use of PHP's "reference" variables if it wanted to modify an object it was passed rather than creating a copy of it. In the new approach, objects are referenced by handle, and not by value....</p>
 								</div>
 							</div>
 						</div>
@@ -236,10 +244,8 @@
 										<a class="post-category cat-4" href="php.html">PHP</a>
 										<span class="post-date">March 27, 2018</span>
 									</div>
-									<h3 class="post-title"><a href="phpdetail.html">Why Node.js Is The Coolest Kid On The Backend
-											Development Block!</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-										labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+									<h3 class="post-title"><a href="phpdetail.html">PHP 5 introduced private and protected member variables and methods</a></h3>
+									<p>This allowed for PHP to gain further abstraction, making creative tasks easier for programmers using the language. Object handling was completely rewritten for PHP 5, expanding the feature set...</p>
 								</div>
 							</div>
 						</div>
@@ -253,7 +259,7 @@
 									<li><a href="php.html?page=3">3</a></li>
 									<li><a href="php.html">...</a></li>
 									<li><a href="php.html?page=6">6</a></li>
-									<li><a href="#">>></a></li>
+									<li><a href="php.html?page=7">>></a></li>
 								</ul>
 							</div>
 						</div>
@@ -272,42 +278,42 @@
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="phpdetail.html"><img src="./img/widget-1.jpg" alt=""></a>
+							<a class="post-img" href="jcdetail.html"><img src="./img/new/js2.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">Tell-A-Tool: Guide To Web Design And Development
-										Tools</a></h3>
+								<h3 class="post-title"><a href="jcdetail.html">"JavaScript" is a trademark of Oracle
+										Corporation in the United States.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="phpdetail.html"><img src="./img/widget-2.jpg" alt=""></a>
+							<a class="post-img" href="htmldetail.html"><img src="./img/new/html1.png" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">Pagedraw UI Builder Turns Your Website Design Mockup
-										Into Code Automatically</a></h3>
+								<h3 class="post-title"><a href="htmldetail.html">HTML is a markup language that web
+										browsers use to interpret</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="phpdetail.html"><img src="./img/widget-3.jpg" alt=""></a>
+							<a class="post-img" href="cssdetail.html"><img src="./img/new/css1.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">Why Node.js Is The Coolest Kid On The Backend
-										Development Block!</a></h3>
+								<h3 class="post-title"><a href="cssdetail.html">CSS information can be provided from
+										various sources.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
-							<a class="post-img" href="phpdetail.html"><img src="./img/widget-4.jpg" alt=""></a>
+							<a class="post-img" href="phpdetail.html"><img src="./img/new/php9.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">Tell-A-Tool: Guide To Web Design And Development
-										Tools</a></h3>
+								<h3 class="post-title"><a href="phpdetail.html">The PHP interpreter only executes PHP
+										code within its delimiters.</a></h3>
 							</div>
 						</div>
 
-							<div class="post post-widget">
-							<a class="post-img" href="phpdetail.html"><img src="./img/widget-4.jpg" alt=""></a>
+						<div class="post post-widget">
+							<a class="post-img" href="phpdetail.html"><img src="./img/new/css7.png" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">Tell-A-Tool: Guide To Web Design And Development
-										Tools</a></h3>
+								<h3 class="post-title"><a href="phpdetail.html">PHP stores integers in a
+										platform-dependent range.</a></h3>
 							</div>
 						</div>
 					</div>
@@ -320,10 +326,10 @@
 						</div>
 						<div class="category-widget">
 							<ul>
-								<li><a href="#" class="cat-1">Javascript<span>340</span></a></li>
-								<li><a href="#" class="cat-2">HTML<span>74</span></a></li>
-								<li><a href="#" class="cat-4">PHP<span>41</span></a></li>
-								<li><a href="#" class="cat-3">CSS<span>35</span></a></li>
+								<li><a href="javascript.html" class="cat-1">Javascript<span>340</span></a></li>
+								<li><a href="html.html" class="cat-2">HTML<span>74</span></a></li>
+								<li><a href="css.html" class="cat-4">PHP<span>41</span></a></li>
+								<li><a href="php.html" class="cat-3">CSS<span>35</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -333,22 +339,17 @@
 					<div class="aside-widget">
 						<div class="tags-widget">
 							<ul>
-								<li><a href="#">Chrome</a></li>
-								<li><a href="#">CSS</a></li>
-								<li><a href="#">Tutorial</a></li>
-								<li><a href="#">Backend</a></li>
-								<li><a href="#">JQuery</a></li>
-								<li><a href="#">Design</a></li>
-								<li><a href="#">Development</a></li>
-								<li><a href="#">JavaScript</a></li>
-								<li><a href="#">Website</a></li>
+								<li><a href="javascript.html">JavaScript</a></li>
+								<li><a href="html.html">HTML</a></li>
+								<li><a href="css.html">CSS</a></li>
+								<li><a href="php.html">PHP</a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- /tags -->
 
 					<!-- archive -->
-				
+
 					<!-- /archive -->
 				</div>
 			</div>
@@ -377,7 +378,8 @@
 							<span>&copy;
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 								Copyright &copy;
-								<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+								template is made
 								with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
 									target="_blank">Colorlib</a>
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
@@ -401,10 +403,10 @@
 							<div class="footer-widget">
 								<h3 class="footer-title">Catagories</h3>
 								<ul class="footer-links">
-									<li><a href="category.html">Web Design</a></li>
-									<li><a href="category.html">JavaScript</a></li>
-									<li><a href="category.html">Css</a></li>
-									<li><a href="category.html">Jquery</a></li>
+									<li><a href="javascript.html">JavaScript</a></li>
+									<li><a href="html.html">HTML</a></li>
+									<li><a href="css.html">CSS</a></li>
+									<li><a href="php.html">PHP</a></li>
 								</ul>
 							</div>
 						</div>
