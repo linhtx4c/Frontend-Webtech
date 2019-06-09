@@ -38,7 +38,7 @@
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" action="" onsubmit="return loginForm()"id = "myForm">
+				<form class="login100-form validate-form" id = "myForm">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
 						<input id = "username" class="input100" type="text" name="username" placeholder="Enter username">
@@ -70,11 +70,7 @@
 						<div style="margin-top: 10px; margin-left: -25%;">
 							<a href="../index.html">Back</a>
 						</div>
-<<<<<<< HEAD
-						<button  onsubmit="return loginForm()" type="submit" onclick="loginForm()"  style="margin-left: 30%;" class="login100-form-btn">Login</button>
-=======
-						<button  type="button" onclick="loginForm()"  style="margin-left: 30%;" class="login100-form-btn">Login</button>
->>>>>>> 9c4664678c91b5bdc97ba9bd7def2b5e7fe404f1
+						<button   type="button" onclick="loginForm()"  style="margin-left: 30%;" class="login100-form-btn">Login</button>
 
 						
 						<div style="margin-left: 9%; margin-top: 10px;">
@@ -110,6 +106,8 @@
 			var b = "admin";
 			var c = "user";
 			var d = "user";
+			var x = "editor";
+			var y = "editor";
 			if(username == ""){
 				alert("Fill out username");
 			} else if (pass == ""){
@@ -120,7 +118,11 @@
 				}
 				else if(username==c && pass==d){
 				location.href = "../logged/index.html"
-				}else{
+				}
+				else if(username == x && pass == y){
+				location.href = "https://ladylee44.github.io/ladysouth/production/editor/index.html";
+				}
+				else{
 					alert("Login unsuccessfully");
 				}
 				
