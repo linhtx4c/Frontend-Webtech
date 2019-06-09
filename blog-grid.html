@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Blog Grid</title>
+	<title>Blog-Grid</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
@@ -81,8 +81,14 @@
 							
 							
 							<div class="search-form" >
-								<input class="search-input" type="text" name="search" placeholder="Enter Your Search ..." style="width: 100%">
-								<button class="search-close"><i class="fa fa-times"></i></button>
+								<input type="text" class="form-control" placeholder="Search for..."
+								style="width: 99%; margin-top: 2%;">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"
+									onclick="location.href='searchresult.html'">Go!</button>
+							</span>
+							<button style="margin-right: 2%; margin-top: 0.5%; " class="search-close"><i
+									class="fa fa-times"></i></button>
 							</div>
 							<button><a href="./login/login.html" style="text-decoration: none"><i class="ti-facebook"></i>Login</a></button>
 							<button><a href="./login/register.html" style="text-decoration: none"><i class="ti-instagram"></i>Register</a></button>
