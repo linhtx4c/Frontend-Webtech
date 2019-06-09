@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>WebMag HTML Template</title>
+	<title>Contact</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
@@ -74,16 +74,20 @@
 							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-								<li class="">
-								  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									<img src="../images/img.jpg" alt="">Admin
-										<span class=" fa fa-angle-down"></span>
-									  </a>
-									  <ul class="dropdown-menu dropdown-usermenu pull-right">
-										<li><a href="https://ladylee44.github.io/ladysouth/production/boss/userprofile.html">Profile</a></li>
-										<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
-								  </ul>
-								</li>
+							<li class="">
+								<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+									aria-expanded="false">
+									<img src="../images/img.jpg" alt="">Editor
+									<span class=" fa fa-angle-down"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-usermenu pull-right">
+									<li><a
+											href="https://ladylee44.github.io/ladysouth/production/editor/userprofile.html">Profile</a>
+									</li>
+									<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
+									</li>
+								</ul>
+							</li>
 						</ul>
 
 						<!-- search & aside toggle -->
@@ -159,17 +163,16 @@
 									<div class="form-group">
 										<textarea class="input" name="message"></textarea>
 									</div>
-									<button onclick="validateAlert(email)"
-										class="primary-button">Submit</button>
+									<button onclick="validateAlert(email)" class="primary-button">Submit</button>
 									<script>
-										function validateAlert(email){
+										function validateAlert(email) {
 											var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 											if (email.value.match(mailformat)) {
 												alert("sending message successfully")
 												return true;
-											}else{
-											alert("You have entered an invalid email address!")
-											return false;
+											} else {
+												alert("You have entered an invalid email address!")
+												return false;
 											}
 										}
 									</script>

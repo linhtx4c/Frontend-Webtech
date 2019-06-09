@@ -30,56 +30,60 @@
 
 </head>
 <style>
-ul { list-style-type: none; }
+	ul {
+		list-style-type: none;
+	}
+
 </style>
 
 <body>
 	<!-- Header -->
-	<header style="dislay=block !important;" class="header_area">
+	<header class="header_area">
 		<div class="col-md-12">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container box_1620">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+			<div class="main_menu">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-center">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<!-- <li class="nav-item"><a class="nav-link" href="#">Category</a></li> -->
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" aria-expanded="false">Category</a>
-								<ul class="dropdown-menu">
-									<li class="cat-1"><a class="nav-link" href="javascript.html">Javascript</a></li>
-									<li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
-									<li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
-									<li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
-								</ul>
-							</li>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav justify-content-center">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<!-- <li class="nav-item"><a class="nav-link" href="#">Category</a></li> -->
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Category</a>
+									<ul class="dropdown-menu">
+										<li class="cat-1"><a class="nav-link" href="javascript.html">Javascript</a></li>
+										<li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+										<li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+										<li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
+									</ul>
+								</li>
 
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-								aria-haspopup="true" aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="index2.html">Blog List</a></li>
-									<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
-								</ul>
-							</li>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="index2.html">Blog List</a></li>
+										<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a>
+										</li>
+									</ul>
+								</li>
 
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right navbar-social">
-							<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
-							<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
-							<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
-							<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
-						</ul>
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right navbar-social">
+								<li><a href="./login/login.html"><i class="ti-facebook"></i>Login</a></li>
+								<!-- <li><a href="#"><i class="ti-twitter-alt">Register</i></a></li> -->
+								<li><a href="./login/register.html"><i class="ti-instagram"></i>Register</a></li>
+								<!-- <li><a href="#"><i class="ti-skype">Search</i></a></li> -->
+							</ul>
 
-						<!-- search & aside toggle -->
-					<!-- <div class="nav-btns">
+							<!-- search & aside toggle -->
+							<!-- <div class="nav-btns">
 						<button class="search-btn"><i class="fa fa-search"></i></button>
 						<div class="search-form">
 							<input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
@@ -87,24 +91,26 @@ ul { list-style-type: none; }
 						</div>
 					</div> -->
 
-					<div class="topnav">
-						<div class="search-container">
-							<form>
-								<input type="text" placeholder="Enter your search" name="search">
-								<a class="fa fa-search" href="searchresult.html" role="button" style="text-decoration: none; padding-right: 20px;"></a>
-							</form>
+							<div class="topnav">
+								<div class="search-container">
+									<form>
+										<input type="text" placeholder="Enter your search" name="search">
+										<a class="fa fa-search" href="searchresult.html" role="button"
+											style="text-decoration: none; padding-right: 20px;"></a>
+									</form>
+								</div>
+							</div>
+							<!-- /search & aside toggle -->
+
 						</div>
+
+
 					</div>
-					<!-- /search & aside toggle -->
-				</div>
-
-
+				</nav>
 			</div>
-		</nav>
-	</div>
 		</div>
-</header>
-<!-- /Header -->
+	</header>
+	<!-- /Header -->
 
 	<!-- section -->
 	<div class="section">
@@ -441,35 +447,40 @@ ul { list-style-type: none; }
 						<div class="post post-widget">
 							<a class="post-img" href="jcdetail.html"><img src="./img/new/js2.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="jcdetail.html">"JavaScript" is a trademark of Oracle Corporation in the United States.</a></h3>
+								<h3 class="post-title"><a href="jcdetail.html">"JavaScript" is a trademark of Oracle
+										Corporation in the United States.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
 							<a class="post-img" href="htmldetail.html"><img src="./img/new/html1.png" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="htmldetail.html">HTML is a markup language that web browsers use to interpret</a></h3>
+								<h3 class="post-title"><a href="htmldetail.html">HTML is a markup language that web
+										browsers use to interpret</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
 							<a class="post-img" href="cssdetail.html"><img src="./img/new/css1.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="cssdetail.html">CSS information can be provided from various sources.</a></h3>
+								<h3 class="post-title"><a href="cssdetail.html">CSS information can be provided from
+										various sources.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
 							<a class="post-img" href="phpdetail.html"><img src="./img/new/php9.jpg" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">The PHP interpreter only executes PHP code within its delimiters.</a></h3>
+								<h3 class="post-title"><a href="phpdetail.html">The PHP interpreter only executes PHP
+										code within its delimiters.</a></h3>
 							</div>
 						</div>
 
 						<div class="post post-widget">
 							<a class="post-img" href="phpdetail.html"><img src="./img/new/css7.png" alt=""></a>
 							<div class="post-body">
-								<h3 class="post-title"><a href="phpdetail.html">PHP stores integers in a platform-dependent range.</a></h3>
+								<h3 class="post-title"><a href="phpdetail.html">PHP stores integers in a
+										platform-dependent range.</a></h3>
 							</div>
 						</div>
 
@@ -666,7 +677,7 @@ ul { list-style-type: none; }
 								<li><a href="html.html">HTML</a></li>
 								<li><a href="css.html">CSS</a></li>
 								<li><a href="php.html">PHP</a></li>
-	
+
 							</ul>
 						</div>
 					</div>
