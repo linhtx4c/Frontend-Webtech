@@ -35,7 +35,7 @@
 	<!-- Header -->
 	<header id="header">
 		<!-- Nav -->
-	<div id="nav">
+				<div id="nav">
 				<!-- Main Nav -->
 				<div id="nav-fixed">
 					<div class="container">
@@ -90,11 +90,12 @@
 								<ul class="nav navbar-nav navbar-right">
 								<li class="">
 								  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									<img src="../images/img.jpg" alt="">User
+									<img src="../images/img.jpg" alt="">Admin
 									<span class=" fa fa-angle-down"></span>
 								  </a>
 								  <ul class="dropdown-menu dropdown-usermenu pull-right">
 									<li class="nav-item"><a href="userprofile.html">Profile</a></li>
+									<li class="nav-item"><a href="https://ladylee44.github.io/ladysouth/production/boss/">Go to Admin Page</a></li>
 									<li class="nav-item"><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
 								  </ul>
 								</li>
@@ -314,19 +315,48 @@
 
 					<!-- reply -->
 					<div class="section-row">
-						<div class="section-title">
-							<h2>Leave a reply</h2>
-							
-						</div>
+						<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="./img/avatar.png" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>Mr.Comment</h4>
+										<span class="time">March 27, 2018 at 8:00 am</span>
+										<a href="commentcss.html" class="reply">Reply</a>
+									</div>
+									<p id ="demo">
+									</p>
+								</div>
+							</div>
 						<form class="post-reply">
 							<div class="row">
 								
-								
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="input" name="message" placeholder="Message" >Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</textarea>
+										<textarea class="input" name="message" placeholder="Message" >The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.</textarea>
 									</div>
-									<button type='button' class="primary-button" onclick="location.href='commentcss.html'">Submit</button>
+									<button type='button' class="primary-button" onclick="comment()">Submit</button>
+									<script>
+   function comment() {
+       //tạo phần tử p    
+       var p = document.createElement("p");
+
+       //tạo phần tử text
+       var node = document.createTextNode("The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.");
+
+       //gắn node vào p
+       p.appendChild(node);
+       
+       //Thay đổi một số thuộc tính của p
+       p.appendChild(node);
+      
+
+       var div = document.getElementById("demo");
+       //gắn p vào div
+       div.appendChild(p);
+   }
+</script>
 								</div>
 							</div>
 						</form>

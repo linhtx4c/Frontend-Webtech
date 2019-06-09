@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>WebMag Post</title>
+	<title>WebMag HTML Template</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
@@ -35,7 +35,7 @@
 	<!-- Header -->
 	<header id="header">
 		<!-- Nav -->
-		<div id="nav">
+					<div id="nav">
 				<!-- Main Nav -->
 				<div id="nav-fixed">
 					<div class="container">
@@ -90,11 +90,12 @@
 								<ul class="nav navbar-nav navbar-right">
 								<li class="">
 								  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									<img src="../images/img.jpg" alt="">User
+									<img src="../images/img.jpg" alt="">Admin
 									<span class=" fa fa-angle-down"></span>
 								  </a>
 								  <ul class="dropdown-menu dropdown-usermenu pull-right">
 									<li class="nav-item"><a href="userprofile.html">Profile</a></li>
+									<li class="nav-item"><a href="https://ladylee44.github.io/ladysouth/production/boss/">Go to Admin Page</a></li>
 									<li class="nav-item"><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
 								  </ul>
 								</li>
@@ -285,6 +286,52 @@
 											<p>We recommend that you complete Learn HTML before learning CSS.</p>
 										</div>
 									</div>
+									<div class="media">
+										<div class="media-left">
+											<img class="media-object" src="./img/avatar.png" alt="">
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<h4>Mr.Reply</h4>
+												<span class="time">March 27, 2018 at 8:00 am</span>
+												<a href="commentcss.html" class="reply">Reply</a>
+											</div>
+											<p id="demo"></p>
+											<form class="post-reply">
+							<div class="row">
+								
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="input" name="message" placeholder="Message" >Our step-by-step guide teaches you the basics of HTML and how to build your first website. That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use tables.
+
+</textarea>
+									</div>
+									<button type='button' class="primary-button" onclick="comment()">Reply</button>
+									<script>
+   function comment() {
+       //tạo phần tử p    
+       var p = document.createElement("p");
+
+       //tạo phần tử text
+       var node = document.createTextNode("Our step-by-step guide teaches you the basics of HTML and how to build your first website. That means how to layout an HTML page, how to add text and images, how to add headings and text formatting, and how to use tables.");
+
+       //gắn node vào p
+       p.appendChild(node);
+       
+       //Thay đổi một số thuộc tính của p
+       p.appendChild(node);
+      
+
+       var div = document.getElementById("demo");
+       //gắn p vào div
+       div.appendChild(p);
+   }
+</script>
+								</div>
+							</div>
+						</form>
+										</div>
+									</div>
 									<!-- /comment -->
 								</div>
 							</div>
@@ -329,22 +376,7 @@
 
 					<!-- reply -->
 					<div class="section-row">
-						<div class="section-title">
-							<h2>Reply form</h2>
-							
-						</div>
-						<form class="post-reply">
-							<div class="row">
-							
-								<div class="col-md-12">
-									<div class="form-group">
-										<textarea class="input" name="message" placeholder="Message" >This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-No Stylesheet.</textarea>
-									</div>
-									<button type='button' class="primary-button" onclick="location.href='replycss.html'">Submit</button>
-								</div>
-							</div>
-						</form>
+						
 					</div>
 					<!-- /reply -->
 				</div>
