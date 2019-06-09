@@ -66,30 +66,28 @@
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
 											role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 										<ul class="dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="index2.html">Blog List</a>
-											</li>
+											<li class="nav-item"><a class="nav-link" href="index2.html">Blog Detail</a>
 											<li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a>
 											</li>
-										</ul>
 									</li>
+								</ul>
+								</li>
 
-									<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-									<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-right">
 										<li class="">
-											<a href="javascript:;" class="user-profile dropdown-toggle"
-												data-toggle="dropdown" aria-expanded="false">
-												<img src="../images/img.jpg" alt="">User
-												<span class=" fa fa-angle-down"></span>
-											</a>
-											<ul class="dropdown-menu dropdown-usermenu pull-right">
-												<li><a href="userprofile.html">Profile</a></li>
-												<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log
-														Out</a></li>
-											</ul>
+										  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<img src="../images/img.jpg" alt="">User
+											<span class=" fa fa-angle-down"></span>
+										  </a>
+										  <ul class="dropdown-menu dropdown-usermenu pull-right">
+											<li><a href="userprofile.html">Profile</a></li>
+											<li><a href="../index.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+										  </ul>
 										</li>
-									</ul>
+								</ul>
 
 								<!-- search & aside toggle -->
 								<!-- <div class="nav-btns">
@@ -183,15 +181,15 @@
 
 		<!-- Page Header -->
 		<div id="post-header" class="page-header">
-			<div class="background-img" style="background-image: url('./img/css1detail.jpg');"></div>
+			<div class="background-img" style="background-image: url('./img/php1.jpg');"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-meta">
-							<a class="post-category cat-3" href="css.html">CSS</a>
+							<a class="post-category cat-4" href="php.html">PHP</a>
 							<span class="post-date">March 27, 2018</span>
 						</div>
-						<h1>Using “box shadows” and clip-path together</h1>
+						<h1>PHP is much better than you think</h1>
 					</div>
 				</div>
 			</div>
@@ -210,36 +208,70 @@
 				<div class="col-md-8">
 					<div class="section-row sticky-container">
 						<div class="main-post">
-							<h3>You make a box</h3>
-							<figure class="figure-img">
-								<img class="img-responsive" src="./img/css2.png" alt="">
-							</figure>
-							<h3>You fashion it into a nice tag shape</h3>
-							<p>You use clip-path because it's great for that.</p>
+							<h3>PHP, the Language</h3>
+							<p>PHP 5.0 (released in 2004) brought us a very solid object model... wait a minute, I'm
+								talking about something released almost 8 years ago. Fast forward now. The latest PHP
+								release, PHP 5.4, comes with all the bells and whistles you might dream of in a modern
+								web language: yes, PHP supports namespaces; yes, PHP supports closures; yes, PHP
+								supports traits.</p>
+							<p>It took some time, but PHP 5.4 also comes with some nice syntactic sugar that makes the
+								whole experience better than ever: yes, PHP supports [] to define arrays; yes, PHP
+								supports calling a method on a newly created object ((new Foo())->bar()); yes, PHP
+								supports getting an array item from any expression ($foo->bar()[1]).</p>
+							<p>PHP has even learned from its mistakes: register_globals and magic_quotes are definitely
+								gone.</p>
+							<p>Last, but not the least, PHP even comes with a built-in web server that eases local
+								testing... and it starts in a matter of micro-seconds.</p>
+							<p>Next challenges: How do we "upgrade" all the old tutorials talking about PHP on the web?
+								What is the best way to support the WebSocket technology in a PHP application?</p>
+							<h3>PHP, the Ecosystem</h3>
+							<p>Having a good language is great, but having a great ecosystem is even better. And the PHP
+								ecosystem has evolved a lot in the last few years.</p>
+							<p>Git</p>
+							<p>I won't talk too much about this one. Git is everywhere and PHP embraced Git pretty fast.
+								Almost all major PHP libraries, frameworks, and products are now using Git, including
+								PHP itself.</p>
+							<p>Composer</p>
+							<p>Two years ago, I wanted to get rid of my ugly-PEAR-hack I did in symfony 1 to support
+								plugins. I wanted to replace it with something that was able to manage project
+								dependencies, not a global installer like PEAR. Managing dependencies is not an easy
+								task, so I tried to find the best algorithm to manage software dependencies; I had a
+								look at everything: from Perl to Ruby, from Debian to Redhat. Nothing was satisfactory:
+								only homegrown solutions that happen to work... empirically. Then, I stumbled upon ZYpp.
+								That was it. ZYpp uses a SAT solver to manage dependencies. Fast forward. Thanks to the
+								hard work of Nils Adermann and Jordi Boggiano, PHP now has one of the best dependency
+								manager, Composer.</p>
+							<p>Yes, PHP has a better dependency manager than any other languages.
 
+								And thanks to Git, Composer, and the PHP built-in web server, it has never been easier
+								to download/install/test a PHP project.
+
+								Want to test Symfony (using PHP 5.4)?</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/css3.png" alt="">
+								<img class="img-responsive" src="./img/php2.png" alt="">
 							</figure>
-							<h3>You want a shadow on it, so you...</h3>
-							<p>Try to use box-shadow.</p>
+							<p>Want to test Silex?</p>
 							<figure class="figure-img">
-								<img class="img-responsive" src="./img/css4.png" alt="">
+								<img class="img-responsive" src="./img/php3.png" alt="">
 							</figure>
-							<p>But it doesn't work. Nothing shows up. You think you're going crazy. You assume you have
-								the syntax wrong. You don't. The problem is that clip-path is cutting it off.</p>
-							<h3>You can drop-shadow a parent element instead</h3>
-							<p>There is a filter that does shadows as well: drop-shadow(). But you can't use it directly
-								on the element because the clip-path will cut it off as well. So you make a parent:</p>
-							<figure class="figure-img">
-								<img class="img-responsive" src="./img/css5.png" alt="">
-							</figure>
-							<p>You can't use box-shadow on that parent either, because the parent is still a rectangle
-								and the shadow will look wrong. But you can use filter, and the shadow will follow the
-								shape.</p>
-							<figure class="figure-img">
-								<img class="img-responsive" src="./img/css6.png" alt="">
-							</figure>
-							<p>That's all.</p>
+							<p>Don't know Composer yet? You should learn about it. Browse Packagist, the main Composer
+								repository: it already has 1900+ packages available and they have been installed more
+								than a million times in less than 3 months.
+								</br>
+								Next challenge: include the Composer installer in the next PHP version?</p>
+							<p>Collaboration</p>
+							<p>Community collaboration is the most important point of this post; the one I'm the most
+								proud of. We start to see better collaboration between PHP projects, even from the very
+								big ones, the ones you would think are large enough to not care about the others.
+								</br>
+								phpBB, Drupal, eZ Publish, Symfony, and many others (phpDocumentor, PHPUnit, Behat,
+								Zikula, Propel, Doctrine, Midgard, ...) are sharing code. Yes, they are "competitors"
+								but they all understood that cross-pollination was a good thing. And Composer is a good
+								enabler.</p>
+							<p>Next challenge: Convince even more projects to join the trend.</p>
+							<h3>Conclusion</h3>
+							<p>Let me say it again: PHP is probably not the best language out there, and I'm the first
+								one to scream about its quirks, but PHP is the best web platform... ever.</p>
 						</div>
 						<div class="post-shares sticky-shares">
 							<a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
@@ -270,14 +302,14 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>MR.B</h4>
+										<h4>MR.G</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
-										<a href="commentcss.html" class="reply">Reply</a>
+										<a href="commentphp.html" class="reply">Reply</a>
 									</div>
-									<p>You will learn many aspects of styling web pages! You’ll be able to set up the
-										correct file structure, edit text and colors, and create attractive layouts.
-										With these skills, you’ll be able to customize the appearance of your web pages
-										to suit your every need!.</p>
+									<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open
+										source general-purpose scripting language that is especially suited for web
+										development and can be embedded into HTML..
+									</p>
 
 									<!-- comment -->
 									<div class="media">
@@ -286,13 +318,34 @@
 										</div>
 										<div class="media-body">
 											<div class="media-heading">
-												<h4>John Doe</h4>
+												<h4>MR.K</h4>
 												<span class="time">March 27, 2018 at 8:00 am</span>
-												<a href="commentcss.html" class="reply">Reply</a>
+												<a href="commentphp.html" class="reply">Reply</a>
 											</div>
-											<p>We recommend that you complete Learn HTML before learning CSS.</p>
+											<p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP
+												pages contain HTML with embedded code that does "something" (in this
+												case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in
+												special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
+												<div class="media">
+										<div class="media-left">
+											<img class="media-object" src="./img/avatar.png" alt="">
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<h4>MR.Reply</h4>
+												<span class="time">March 27, 2018 at 8:00 am</span>
+												<a href="commentphp.html" class="reply">Reply</a>
+											</div>
+											<p> PHP
+												pages contain HTML with embedded code that does "something" . The PHP code is enclosed in special start and end processing instructions <?php and ?> that allow
+												you to jump into and out of "PHP mode..</p>
 										</div>
 									</div>
+
+										</div>
+									</div>
+
 									<!-- /comment -->
 								</div>
 							</div>
@@ -305,51 +358,50 @@
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>John Doe</h4>
+										<h4>MR.L</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
-										<a href="commentcss.html" class="reply">Reply</a>
+										<a href="commentphp.html" class="reply">Reply</a>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									<p>The best things in using PHP are that it is extremely simple for a newcomer, but
+										offers many advanced features for a professional programmer. Don't be afraid
+										reading the long list of PHP's features. You can jump in, in a short time, and
+										start writing simple scripts in a few hours.
 									</p>
 								</div>
 							</div>
-
+							<!-- /comment -->
 							<div class="media">
 								<div class="media-left">
 									<img class="media-object" src="./img/avatar.png" alt="">
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<h4>Mr.Comment</h4>
+										<h4>MR.O</h4>
 										<span class="time">March 27, 2018 at 8:00 am</span>
-										<a href="commentcss.html" class="reply">Reply</a>
+										<a href="commentphp.html" class="reply">Reply</a>
 									</div>
-									<p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+									<p>The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.
 									</p>
 								</div>
 							</div>
-							<!-- /comment -->
 						</div>
 					</div>
 					<!-- /comments -->
 
 					<!-- reply -->
-					<div class="section-row">
+						<div class="section-row">
 						<div class="section-title">
-							<h2>Reply form</h2>
+							<h2>Reply Form</h2>
 							
 						</div>
 						<form class="post-reply">
 							<div class="row">
-							
+								
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="input" name="message" placeholder="Message" >This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-No Stylesheet.</textarea>
+										<textarea class="input" name="message" placeholder="Message" >...</textarea>
 									</div>
-									<button type='button' class="primary-button" onclick="location.href='replycss.html'">Submit</button>
+									<button type='button' class="primary-button" onclick="location.href='replyphp.html'">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -360,6 +412,7 @@ No Stylesheet.</textarea>
 
 				<!-- aside -->
 				<div class="col-md-4">
+
 
 					<!-- post widget -->
 					<div class="aside-widget">
