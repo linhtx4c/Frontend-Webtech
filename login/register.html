@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Register</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
@@ -14,13 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-	<!--===============================================================================================-->	
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<!--===============================================================================================-->	
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
@@ -72,135 +73,154 @@
             to {bottom: 0; opacity: 0;}
             } */
         </style> -->
-    </head>
-    <body>
-    	
-    	<div class="limiter">
-    		<div class="container-login100">
-    			<div class="wrap-login100">
-    				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
-    					<span class="login100-form-title-1">
-    						Register
-    					</span>
-    				</div>
-    				
-    				<form class="login100-form validate-form" method ="POST" novalidate id = "myForm">
-    					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-    						<span style="font-weight: bold;"class="label-input100">Username</span>
-    						<input id = "name" class="input100" type="text" name="username" placeholder="Enter username">
-    						<span class="focus-input100"></span>
-    					</div>
-    					<!-- <div id="snackbar"><h2>Create successful</h2></div> -->
-    					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-    						<span style="font-weight: bold;" class="label-input100">Email</span>
-    						<input id="email" class="input100" type="text" name="username" placeholder="Enter email">
-    						<span class="focus-input100"></span>
-    					</div>
+</head>
 
-    					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-    						<span style="font-weight: bold;" class="label-input100">Password</span>
-    						<input id = "pass1"class="input100" type="password" name="pass" placeholder="Enter password">
-    						<span class="focus-input100"></span>
-    					</div>
+<body>
 
-    					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-    						<span style="font-weight: bold;" class="label-input100">Confirm Password</span>
-    						<input id = "pass2" class="input100" type="password" name="pass" placeholder="Confirm password">
-    						<span class="focus-input100"></span>
-    					</div>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Register
+					</span>
+				</div>
 
+				<form class="login100-form validate-form" method="POST" novalidate id="myForm">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span style="font-weight: bold;" class="label-input100">Username</span>
+						<input id="name" class="input100" type="text" name="username" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
+					<!-- <div id="snackbar"><h2>Create successful</h2></div> -->
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+						<span style="font-weight: bold;" class="label-input100">Email</span>
+						<input id="email" class="input100" type="text" name="email" placeholder="Enter email">
+						<span class="focus-input100"></span>
+					</div>
 
-    					<div class="flex-sb-m w-full p-b-30">
-    						<div style="font-weight: bold;" class="contact100-form-checkbox">
-    							<input class="input-checkbox100" id="ckb1" type="checkbox" name="accept">
-    							<label class="label-checkbox100" for="ckb1">
-    								I accept the <a href="#">Term of Uses</a> and	<a href="">Privacy Policy</a>
-    							</label>
-    						</div>
-    					</div>
+					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+						<span style="font-weight: bold;" class="label-input100">Password</span>
+						<input id="pass1" class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
 
-    					<div class="container-login100-form-btn">
-    						<div style="margin-top: 10px; margin-left: -25%;">
-    							<a href="../index.html">Back</a>
-    						</div>
-    						<button  type="button" onclick="createUser()"  style="margin-left: 30%;" class="login100-form-btn">Register</button>
-    						<div style= "margin-left: 50px; margin-top: 10px;">
-    							<a href="login.html"> Have an account? </a>
-    						</div>
-    						
-    					</div>
-    				</form>
-
-    			</div>
-    		</div>
-    	</div>
-    	<script>
-    		function myFunction() {
+					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+						<span style="font-weight: bold;" class="label-input100">Confirm Password</span>
+						<input id="pass2" class="input100" type="password" name="pass" placeholder="Confirm password">
+						<span class="focus-input100"></span>
+					</div>
 
 
-                  // Get the snackbar DIV
-                  var x = document.getElementById("snackbar");
-                  
-                  // Add the "show" class to DIV
-                  x.className = "show";
-                  
-                  // After 3 seconds, remove the show class from DIV
-                  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-                  
-              }
+					<div class="flex-sb-m w-full p-b-30">
+						<div style="font-weight: bold;" class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="accept">
+							<label class="label-checkbox100" for="ckb1">
+								I accept the <a href="#">Term of Uses</a> and <a href="">Privacy Policy</a>
+							</label>
+						</div>
+					</div>
 
-              function createUser(){
-              	var x = document.forms["myForm"]["name"].value;
-              	var email = document.forms["myForm"]["email"].value;
-              	var pass1 = document.forms["myForm"]["pass1"].value;
-              	var pass2 = document.forms["myForm"]["pass2"].value;
-              	var check = document.getElementById("ckb1").checked;
-              	if (x == "") {
-              		alert("Username must be filled out");
-              		return false;
-              	} else if (email == "") {
-              		alert("Email must be filled out");
-              		return false;
-              	}  else if (pass1 == "") {
-              		alert("Password must be filled out");
-              		return false;
-              	} else if (pass2 == "") {
-              		alert("Confirm Password must be filled out");
-              		return false;
-              	}else if(pass1 != pass2){
-              		alert("Password must match with Confirm Password");
-              	}
-              	else if(check == false){
-              		alert("Please check box to agree to our Term of Uses and Privacy Policy");
-              	}
-              	else{
-              		alert("Register successfully! Welcome you !!!");
-              		if(true){
-              			window.location.href="login.html";
-              		}
-              		
-              	}
-              }
+					<div class="container-login100-form-btn">
+						<div style="margin-top: 10px; margin-left: -25%;">
+							<a href="../index.html">Back</a>
+						</div>
+						<button type="button" onclick="createUser()" style="margin-left: 30%;"
+							class="login100-form-btn">Register</button>
+						<div style="margin-left: 50px; margin-top: 10px;">
+							<a href="login.html"> Have an account? </a>
+						</div>
 
-              
-              
-          </script>
-          <!--===============================================================================================-->
-          <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-          <!--===============================================================================================-->
-          <script src="vendor/animsition/js/animsition.min.js"></script>
-          <!--===============================================================================================-->
-          <script src="vendor/bootstrap/js/popper.js"></script>
-          <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-          <!--===============================================================================================-->
-          <script src="vendor/select2/select2.min.js"></script>
-          <!--===============================================================================================-->
-          <script src="vendor/daterangepicker/moment.min.js"></script>
-          <script src="vendor/daterangepicker/daterangepicker.js"></script>
-          <!--===============================================================================================-->
-          <script src="vendor/countdowntime/countdowntime.js"></script>
-          <!--===============================================================================================-->
-          <script src="js/main.js"></script>
+					</div>
+				</form>
 
-      </body>
-      </html>
+			</div>
+		</div>
+	</div>
+	<script>
+		function myFunction() {
+
+
+			// Get the snackbar DIV
+			var x = document.getElementById("snackbar");
+
+			// Add the "show" class to DIV
+			x.className = "show";
+
+			// After 3 seconds, remove the show class from DIV
+			setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+
+		}
+
+		function createUser() {
+			var x = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var pass1 = document.forms["myForm"]["pass1"].value;
+			var pass2 = document.forms["myForm"]["pass2"].value;
+			var check = document.getElementById("ckb1").checked;
+
+			var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+			if (x == "") {
+				alert("Username must be filled out");
+				return false;
+			} else if (email == "") {
+				alert("Email must be filled out");
+				return false;
+			} else if (pass1 == "") {
+				alert("Password must be filled out");
+				return false;
+			} else if (pass2 == "") {
+				alert("Confirm Password must be filled out");
+				return false;
+			} else if (pass1 != pass2) {
+				alert("Password must match with Confirm Password");
+			}
+			else if (validateAlert(email)) {
+				alert("invalid email format");
+				return false
+			}
+			else if (check == false) {
+				alert("Please check box to agree to our Term of Uses and Privacy Policy");
+			}
+			else {
+				alert("Register successfully! Welcome you !!!");
+				if (true) {
+					window.location.href = "login.html";
+				}
+
+			}
+			function validateAlert(email) {
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if (!email.match(mailformat)) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+		}
+
+
+
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
